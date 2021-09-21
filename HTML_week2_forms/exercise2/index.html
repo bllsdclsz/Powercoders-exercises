@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <main>
+         <h2>Profil</h2>
+         <h4>Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</h4>
+         <form>
+            <hr />
+            <section>
+               <p>Persönliche Daten</p>
+               <label for="titel">Titel</label>
+               <input type="text" name="titel" id="titel" placeholder="Dr.hc"><br>
+               <label for="vorname">Vorname</label>
+               <input type="text" name="vorname" id="vorname" placeholder="Peter"><br>
+               <label for="nachname">Nachname</label>
+               <input type="text" name="nachname" id="nachname" placeholder="Muster"><br>
+               <label for="geschlecht">Geschlecht</label>
+               <input type="radio" name="w" id="w" placeholder="W">
+               <input type="radio" name="m" id="m" placeholder="M" checked><br>
+               <label for="sprache">Sprache</label>
+               <input type="radio" name="de" id="de" placeholder="DE" checked>
+               <input type="radio" name="fr" id="fr" placeholder="FR">
+               <input type="radio" name="it" id="it" placeholder="IT">
+            </section>
+            <hr>
+            <section>
+               <p>Kontaktdaten</p>
+               <label for="telefon">Telefon</label>
+               <input type="tel" name="telefon" id="telefon" required><br>
+               <label for="mobile">Mobile</label>
+               <input type="tel" name="mobile" id="mobile" placeholder="optional"><br>
+               <label for="hauptnummer">Hauptnummer</label>
+               <input type="number" name="hauptnummer" id="hauptnummer" placeholder="optional"><br>
+               <label for="fax">Fax</label>
+               <input type="tel" name="fax" id="fax" placeholder="optional"><br>
+               <label for="mail1">Mail 1</label>
+               <input type="email" name="mail1" id="mail1" required><br>
+               <label for="mail2">Mail 2</label>
+               <input type="email" name="mail2" id="mail2" placeholder="optional">
+            </section>
+            <hr>
+            <section>
+               <p>Adressdaten</p>
+               <label for="firma">Firma</label>
+               <input type="text" name="firma" id="firma" required><br>
+               <label for="zusatzfirma">Zusatz Firma</label>
+               <input type="text" name="zusatzfirma" id="zusatzfirma" placeholder="optional"><br>
+               <label for="homepage">Homepage</label>
+               <input type="url" name="homepage" id="homepage" placeholder="optional"><br>
+               <label for="adresse">Adresse</label>&#47;<label for="hausnummer">Haus Nr</label>
+               <input type="text" name="adressse" id="adresse" value="Musterstrasse">
+               <input type="number" name="hausnummer" id="hausnummer" value="33"><br>
+               <label for="zusatzadresse">Zusatz Adresse</label>
+               <input type="text" name="zusatzadresse" id="zusatzadresse" placeholder="optional"><br>
+               <label for="postfach">Postfach</label>
+               <input type="text" name="postfach" id="postfach" placeholder="optional"><br>
+               <label for="plz">PLZ</label>&#47;<label for="ort">Ort</label>
+               <input type="number" name="plz" id="plz" value="8800">
+               <input type="text" name="ort" id="ort" value="Musterstadt"><br>
+               <label for="kanton">Kanton</label>&#47;<label for="land">Land</label>
+               <input type="text" name="kanton" id="kanton" value="ZH">
+               <input type="text" name="land" id="land" value="Schweiz"><br>
+            </section>
+            <button type="submit">Speichern</button>
+         </form>
+      </main>
+   </body>
+</html>
