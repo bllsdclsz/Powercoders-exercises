@@ -67,7 +67,7 @@
                </div>
                <div class="form_group">
                   <label for="mail1" class="form_label">Mail 1</label>
-                  <input type="email" name="mail1" id="mail1" required />
+                  <input type="email" name="mail1" id="mail1" required /><i class="form_entity">&#120;</i>
                </div>
                <div class="form_group">
                   <label for="mail2" class="form_label">Mail 2</label>
@@ -86,14 +86,16 @@
                </div>
                <div class="form_group">
                   <label for="homepage" class="form_label">Homepage</label>
-               <input type="url" name="homepage" id="homepage" placeholder="optional" />
+                  <input type="url" name="homepage" id="homepage" placeholder="optional" />
                </div>
                <div class="form_group">
-                  <div><label for="adresse" class="form_label">Adresse&#47;</label><label for="hausnummer" class="form_label">Haus Nr</label></div>
-               <div>
-                  <input type="text" name="adressse" id="adresse" value="Musterstrasse" />
-               <input type="number" name="hausnummer" id="hausnummer" value="33" />
-               </div>
+                   <span>
+                     <label for="adresse" class="form_label">Adresse&#47;</label><label for="hausnummer" class="form_label">Haus Nr</label>
+                   </span>
+                  <div>
+                     <input type="text" name="adressse" id="adresse" value="Musterstrasse" />
+                     <input type="number" name="hausnummer" id="hausnummer" value="33" />
+                  </div>
                </div>
                <div class="form_group">
                   <label for="zusatzadresse" class="form_label">Zusatz Adresse</label>
@@ -101,23 +103,25 @@
                </div>
                <div class="form_group">
                   <label for="postfach" class="form_label">Postfach</label>
-               <input type="text" name="postfach" id="postfach" placeholder="optional" />
+                  <input type="text" name="postfach" id="postfach" placeholder="optional" />
                </div>
                <div class="form_group">
-                  <div><label for="plz" class="form_label">PLZ&#47;</label><label for="ort" class="form_label">Ort</label></div>
+                  <span>
+                     <label for="plz" class="form_label">PLZ&#47;</label><label for="ort" class="form_label">Ort</label>
+                  </span>
                <div>
                   <input type="number" name="plz" id="plz" value="8800" />
-               <input type="text" name="ort" id="ort" value="Musterstadt" />
+                  <input type="text" name="ort" id="ort" value="Musterstadt" />
                </div>
                </div>
                <div class="form_group">
-                  <div>
+                  <span>
                      <label for="kanton" class="form_label">Kanton&#47;</label><label for="land" class="form_label">Land</label>
+                  </span>
+                  <div>
+                     <input type="text" name="kanton" id="kanton" value="ZH" />
+                     <input type="text" name="land" id="land" value="Schweiz" />
                   </div>
-               <div>
-                  <input type="text" name="kanton" id="kanton" value="ZH" />
-               <input type="text" name="land" id="land" value="Schweiz" />
-               </div>
                </div>
             </fieldset>
             <div>

@@ -26,6 +26,22 @@ body {
    width: 100%;
    padding: 10px 0;
 }
+.form_group > span + div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+}
+
+.form_group > span + div input {
+   display: inline;
+   width: calc(100%);
+}
+
+.form_group > span + div input[type="number"],
+input#kanton {
+   width: calc(30%);
+}
 
 .form_label {
    color: #818181b4;
@@ -35,29 +51,14 @@ body {
 
 input[type="text"],
 input[type="text"]:visited,
-input[type="text"]:focus,
-input[type="text"]:active,
-input[type="text"]:hover,
 input[type="tel"],
 input[type="tel"]:visited,
-input[type="tel"]:active,
-input[type="tel"]:focus,
-input[type="tel"]:hover,
 input[type="number"],
 input[type="number"]:visited,
-input[type="number"]:focus,
-input[type="number"]:active,
-input[type="number"]:hover,
 input[type="url"],
 input[type="url"]:visited,
-input[type="url"]:focus,
-input[type="url"]:active,
-input[type="url"]:hover,
 input[type="email"],
-input[type="email"]:visited,
-input[type="email"]:focus,
-input[type="email"]:active,
-input[type="email"]:hover {
+input[type="email"]:visited {
    width: 50%;
    border-top: 0;
    border-left: 0;
@@ -76,8 +77,6 @@ input[type="radio"] {
 .radio_field {
    display: flex;
    justify-content: space-evenly;
-   justify-self: stretch;
-   justify-items: stretch;
    align-items: center;
    width: 50%;
 }
@@ -85,6 +84,7 @@ input[type="radio"] {
 .radio_field label {
    display: block;
    text-align: center;
+   width: calc(100%);
    padding: 10px 30px;
    border: 1px solid #818181b4;
    border-radius: 5px;
@@ -118,15 +118,22 @@ fieldset {
 }
 
 h1 {
-   width: 25%;
-   border-top: 8px solid black;
    margin: 15px 0;
    padding: 15px 0;
 }
 
+h1::before {
+   content: "";
+   border-top: 10px solid black;
+   height: 10px;
+   width: 10rem;
+   display: block;
+   margin-bottom: 1rem;
+}
+
 h4 {
-   margin: 15px 0;
-   padding: 15px 0;
+   margin: 10px 0;
+   padding: 10px 0;
 }
 
 form {
@@ -144,7 +151,7 @@ button[type="submit"] {
    border: none;
 }
 
-form>div:last-child {
+form > div:last-child {
    display: flex;
    justify-content: flex-end;
 }
@@ -153,8 +160,37 @@ fieldset:last-of-type {
    border-bottom: 0;
 }
 
-@media only screen and (min-width: 600px) {
-   .form_group {
+.form_entity {
+   position: fixed;
+   border: 1px solid black;
+   border-radius: 50%;
+}
 
+@media only screen and (max-width: 1000px) {
+   .container {
+      width: 60vw;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .container {
+      width: 80vw;
+   }
+}
+
+@media only screen and (max-width: 380px) {
+   .container {
+      width: 100vw;
+   }
+
+   .form_group {
+      display: block;
+      width: 100%;
+      padding: 10px 10px;
+   }
+
+   .radio_field {
+      display: block;
+      width: 100%;
    }
 }
