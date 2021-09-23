@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <main class="container">
+         <h1>Profil</h2>
+         <h4>Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</h4>
+         <form>
+            <fieldset>
+               <legend>Persönliche Daten</legend>
+               <div class="form_group">
+                  <label for="titel" class="form_label">Titel</label>
+                  <input type="text" name="titel" id="titel" value="Dr.hc" />
+               </div>
+               <div class="form_group">
+                  <label for="vorname" class="form_label">Vorname</label>
+                  <input type="text" name="vorname" id="vorname" value="Peter" />
+               </div>
+               <div class="form_group">
+                  <label for="nachname" class="form_label">Nachname</label>
+                  <input type="text" name="nachname" id="nachname" value="Muster" />
+               </div>
+               <div class="form_group">
+                  <label for="geschlecht" class="form_label">Geschlecht</label>
+                  <div class="radio_field">
+                     <input type="radio" name="w" id="w" placeholder="W" />
+                     <label for="w">W</label>
+                     <input type="radio" name="m" id="m" placeholder="M" checked />
+                     <label for="m">M</label>
+                  </div>
+               </div>
+               <div class="form_group">
+                  <label for="sprache" class="form_label">Sprache</label>
+                  <div class="radio_field">
+                     <input type="radio" name="de" id="de" placeholder="DE" checked />
+                     <label for="de">DE</label>
+                     <input type="radio" name="fr" id="fr" placeholder="FR" />
+                     <label for="fr">FR</label>
+                     <input type="radio" name="it" id="it" placeholder="IT" />
+                     <label for="it">IT</label>
+                  </div>
+               </div>
+            </fieldset>
+            <fieldset>
+               <legend>Kontaktdaten</legend>
+               <div class="form_group">
+                  <label for="telefon" class="form_label">Telefon</label>
+                  <input type="tel" name="telefon" id="telefon" required />
+               </div>
+               <div class="form_group">
+                  <label for="mobile" class="form_label">Mobile</label>
+                  <input type="tel" name="mobile" id="mobile" placeholder="optional" />
+               </div>
+               <div class="form_group">
+                  <label for="hauptnummer" class="form_label">Hauptnummer</label>
+                  <input type="number" name="hauptnummer" id="hauptnummer" placeholder="optional" />
+               </div>
+               <div class="form_group">
+                  <label for="fax" class="form_label">Fax</label>
+                  <input type="tel" name="fax" id="fax" placeholder="optional" />
+               </div>
+               <div class="form_group">
+                  <label for="mail1" class="form_label">Mail 1</label>
+                  <input type="email" name="mail1" id="mail1" required />
+               </div>
+               <div class="form_group">
+                  <label for="mail2" class="form_label">Mail 2</label>
+                  <input type="email" name="mail2" id="mail2" placeholder="optional" />
+               </div>
+            </fieldset>
+            <fieldset>
+               <legend>Adressdaten</legend>
+               <div class="form_group">
+                  <label for="firma" class="form_label">Firma</label>
+               <input type="text" name="firma" id="firma" required />
+               </div>
+               <div class="form_group">
+                  <label for="zusatzfirma" class="form_label">Zusatz Firma</label>
+               <input type="text" name="zusatzfirma" id="zusatzfirma" placeholder="optional" />
+               </div>
+               <div class="form_group">
+                  <label for="homepage" class="form_label">Homepage</label>
+               <input type="url" name="homepage" id="homepage" placeholder="optional" />
+               </div>
+               <div class="form_group">
+                  <div><label for="adresse" class="form_label">Adresse&#47;</label><label for="hausnummer" class="form_label">Haus Nr</label></div>
+               <div>
+                  <input type="text" name="adressse" id="adresse" value="Musterstrasse" />
+               <input type="number" name="hausnummer" id="hausnummer" value="33" />
+               </div>
+               </div>
+               <div class="form_group">
+                  <label for="zusatzadresse" class="form_label">Zusatz Adresse</label>
+               <input type="text" name="zusatzadresse" id="zusatzadresse" placeholder="optional" />
+               </div>
+               <div class="form_group">
+                  <label for="postfach" class="form_label">Postfach</label>
+               <input type="text" name="postfach" id="postfach" placeholder="optional" />
+               </div>
+               <div class="form_group">
+                  <div><label for="plz" class="form_label">PLZ&#47;</label><label for="ort" class="form_label">Ort</label></div>
+               <div>
+                  <input type="number" name="plz" id="plz" value="8800" />
+               <input type="text" name="ort" id="ort" value="Musterstadt" />
+               </div>
+               </div>
+               <div class="form_group">
+                  <div>
+                     <label for="kanton" class="form_label">Kanton&#47;</label><label for="land" class="form_label">Land</label>
+                  </div>
+               <div>
+                  <input type="text" name="kanton" id="kanton" value="ZH" />
+               <input type="text" name="land" id="land" value="Schweiz" />
+               </div>
+               </div>
+            </fieldset>
+            <div>
+               <button type="submit">Speichern</button>
+            </div>
+         </form>
+      </main>
+   </body>
+</html>
