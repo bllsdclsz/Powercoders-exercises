@@ -5,6 +5,7 @@ html {
 *,
 *::after,
 *::before {
+   box-shadow: inherit;
    margin: 0;
 }
 
@@ -140,14 +141,15 @@ form {
    border-top: 2px solid black;
 }
 
-button[type="submit"] {
+button {
    border-radius: 5px;
    background-color: #bd1616;
    color: white;
    width: 150px;
-   margin: 10px 0;
+   margin: 10px 0 10px auto;
    padding: 15px 0px;
    font-size: large;
+   box-shadow: 1px 1px 1px 1px grey;
    border: none;
 }
 
