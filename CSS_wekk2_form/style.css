@@ -29,19 +29,19 @@ body {
 }
 .form_group > span + div {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    width: 50%;
 }
 
 .form_group > span + div input {
    display: inline;
-   width: calc(100%);
+   width: calc(75%);
 }
 
 .form_group > span + div input[type="number"],
 input#kanton {
-   width: calc(30%);
+   width: calc(20%);
 }
 
 .form_label {
@@ -70,9 +70,7 @@ input[type="email"]:visited {
 }
 
 input[type="radio"] {
-   opacity: 0;
-   position: fixed;
-   width: 0;
+   display: none;
 }
 
 .radio_field {
@@ -87,23 +85,12 @@ input[type="radio"] {
    text-align: center;
    width: calc(100%);
    padding: 10px 30px;
+   color: black;
    border: 1px solid #818181b4;
    border-radius: 5px;
 }
 
 input[type="radio"]:checked + label {
-   color: #bd1616;
-   border-bottom: 1px solid #bd1616;
-   box-shadow: inset 0 -3px 0 0;
-}
-
-input[type="radio"]:focus + label {
-   color: #bd1616;
-   border-bottom: 1px solid #bd1616;
-   box-shadow: inset 0 -3px 0 0;
-}
-
-input[type="radio"] + label:hover {
    color: #bd1616;
    border-bottom: 1px solid #bd1616;
    box-shadow: inset 0 -3px 0 0;
@@ -142,6 +129,7 @@ form {
 }
 
 button {
+   display: block;
    border-radius: 5px;
    background-color: #bd1616;
    color: white;
@@ -163,7 +151,8 @@ fieldset:last-of-type {
 }
 
 .form_entity {
-   position: fixed;
+   z-index: 10;
+   position: relative;
    border: 1px solid black;
    border-radius: 50%;
 }
@@ -180,7 +169,7 @@ fieldset:last-of-type {
    }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 382px) {
    .container {
       width: 100vw;
    }
