@@ -12,23 +12,27 @@
 
 ## Example
 
-40 actual number
+73 actual number
 1-100 first guess range
 
 50 first guess
 
-1-50 second guess range
+50-100 second guess range
 
-25 second guess
+75 second guess
 
-25-50 third guess range
+50-75 third guess range
 
-37,5 third guess
+62 third guess
 
-37,5-50 fourth guess range
+62-75 fourth guess range
 
-43,5 fourth guess
+68 fourth guess
 
-37,5-43,5 fifth guess range
+68-75 fifth guess range
 
-40,5 fifth guess
+71 fifth guess
+
+71-75 sixth guess range
+
+73 sixth guess
