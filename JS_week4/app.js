@@ -1,13 +1,13 @@
-for(let index = 2; index<1000; index++){
-   for(var number = 2; number<index; number++){
-      if(index % number === 0) break;
+for (let index = 2; index < 1000; index++) {
+   for (var number = 2; number < index; number++) {
+      if (index % number === 0) break;
    }
-   if(index === number){
-      console.log(index)
+   if (index === number) {
+      console.log(index);
    }
 }
 
-let array = [2, 9, 6, 66, 78, 7, 23, 45]
+let array = [2, 9, 6, 66, 78, 7, 23, 45];
 
 let done = false;
 
@@ -23,4 +23,12 @@ while (!done) {
    }
 }
 
-console.log(array)
+console.log(array);
+
+var temp = prompt("type somthing");
+var count = temp.match(/[a-z+A-Z]/g).length;
+
+console.log(count);
+console.log(temp.match(/[a-z+A-Z]/g));
+
+
