@@ -3,7 +3,7 @@
 1.Start
 2.Ask a number
 3.Validate the number between 1 and 100? If not go to the step 2
-4.Guess the number as middle of the range?
+4.Guess the number as middle of the range and floor the guess number?
 5.Is it equal? Then go to the End
 6.Validate the number is greater than guess number? If not go to the step 8
 7.Determine new range between guess and maximum of previous range. Then go to the step 4
