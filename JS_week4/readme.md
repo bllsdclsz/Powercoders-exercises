@@ -11,7 +11,7 @@
 9.End
 
 ## Example
-
+ 
 73 actual number
 1-100 first guess range
 
