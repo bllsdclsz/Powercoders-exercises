@@ -31,4 +31,4 @@
 
 37,5-43,5 fifth guess range
 
-40,5 fifth range
+40,5 fifth guess
