@@ -1,5 +1,4 @@
 let userInput = prompt("Please type something!");
-let lengthOfInput = userInput.length;
 let counter = 0;
 
 userInput.split("").forEach((e) => {
@@ -10,5 +9,5 @@ userInput.split("").forEach((e) => {
    }
 });
 
-let output = `Our input is ${userInput} and has ${counter} characters.`;
+let output = `Your input is ${userInput} and has ${counter} characters.`;
 console.log(output)
