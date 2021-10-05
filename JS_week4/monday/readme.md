@@ -11,7 +11,7 @@
 9.End
 
 ## Example
- 
+
 73 actual number
 1-100 first guess range
 
@@ -36,3 +36,5 @@
 71-75 sixth guess range
 
 73 sixth guess
+
+

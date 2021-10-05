@@ -31,4 +31,25 @@ var count = temp.match(/[a-z+A-Z]/g).length;
 console.log(count);
 console.log(temp.match(/[a-z+A-Z]/g));
 
+let askANumber = 73;
+let minNumber = 1;
+let maxNumber = 100;
+
+let guessNumber = Math.floor((maxNumber+minNumber)/2)
+
+while(!(guessNumber==askANumber)){
+   guessNumber = Math.floor((maxNumber+minNumber)/2)
+   let isEqual = prompt(`Is it equal to ${guessNumber}? Y or N`)
+   if(isEqual.toLocaleLowerCase() == 'y') {
+      guessNumber=askANumber
+      console.log(`your actual number is ${guessNumber}`)
+   } else {
+      let answer = prompt(`Is it greater than ${guessNumber}? Y or N`)
+      if((answer.toLocaleLowerCase() == 'y')) {
+         minNumber = guessNumber
+      } else{
+         maxNumber = guessNumber
+      }
+   }
+}
 
