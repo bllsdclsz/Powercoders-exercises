@@ -9,17 +9,17 @@ function isValid(pNumber) {
    }
 }
 
-function assignNumber() {
-   if (isValid(firstNumber) || isValid(secondNumber)) {
-      return true;
+function assignNumber(pNumber, pRequest) {
+   if (isValid(pNumber)) {
+      return pNumber;
    }
-   firstNumber = prompt("Please put in your first positive integer!");
-   secondNumber = prompt("Please put in your second positive integer!");
-   return assignNumber();
+   pNumber = prompt(`Please put in your ${pRequest} positive integer!`);
+   return assignNumber(pNumber, pRequest);
 }
 
 function calculateGCD() {
-   assignNumber();
+   firstNumber = assignNumber(firstNumber, 'first');
+   secondNumber = assignNumber(secondNumber, 'second');
    if (remainder == 0) {
       return true;
    }
