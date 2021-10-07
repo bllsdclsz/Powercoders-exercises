@@ -18,9 +18,6 @@ function assignNumber() {
    return assignNumber();
 }
 
-console.log(`Our firstnumber is ${firstNumber}`);
-console.log(`Our secondnumber is ${secondNumber}`);
-
 function calculateGCD() {
    assignNumber();
    if (remainder == 0) {
@@ -35,7 +32,7 @@ function calculateGCD() {
 }
 
 calculateGCD();
-console.log(`Our GCD ${greatestCommonDivisor} in the step ${step}`);
+console.log(`Our GCD is ${greatestCommonDivisor} in step ${step}`);
 
 /**
  * first Step
