@@ -3,14 +3,14 @@ let step = 0;
 
 function isValid(pNumber) {
    if (pNumber < 0 || pNumber == null) {
-      return true;
-   } else {
       return false;
+   } else {
+      return true;
    }
 }
 
 function assignNumber() {
-   if (!isValid(firstNumber) || !isValid(secondNumber)) {
+   if (isValid(firstNumber) || isValid(secondNumber)) {
       return true;
    }
    firstNumber = prompt("Please put in your first positive integer!");
