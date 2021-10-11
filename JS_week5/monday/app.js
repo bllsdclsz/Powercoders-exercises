@@ -44,7 +44,7 @@ function printArray(pArray) {
    }
 }
 
-function controlCheck(pTodo) {
+function changeIsDoneStatus(pTodo) {
    return pTodo.isChecked ? pTodo.isChecked = false : pTodo.isChecked = true
 }
 
