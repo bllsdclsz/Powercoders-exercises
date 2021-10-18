@@ -19,7 +19,7 @@ main {
 img {
    width: 500px;
    height: 400px;
-   vertical-align: middle;
+   border-radius: 10px;
 }
 
 .transition-fade {
