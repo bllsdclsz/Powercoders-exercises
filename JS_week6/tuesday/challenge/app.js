@@ -7,20 +7,19 @@ const images = [
 
 let counter = 0;
 
-let imageSection = document.querySelector("section:nth-child(1)")
-let imageElement = document.createElement("img")
-imageElement.alt = "alternative text"
-imageElement.id = "slider"
+let imageElement = document.createElement("img");
+let imageSection = document.querySelector("section:nth-child(1)");
+imageElement.alt = "alternative text";
+imageElement.id = "slider";
 imageElement.src = images[counter];
-imageElement.classList.add("transition-fade");
-imageSection.appendChild(imageElement)
+imageElement.classList.add("transition-fade")
+imageSection.appendChild(imageElement);
 
-const previousButton = document.querySelector("#previous");
-const nextButton = document.querySelector("#next");
+const prevButton = document.getElementById("previous");
+const nextButton = document.getElementById("next");
 
-
+prevButton.addEventListener("click", getPreviousImage);
 nextButton.addEventListener("click", getNextImage);
-previousButton.addEventListener("click", getPreviousImage);
 
 function getNextImage() {
    counter++;
@@ -32,20 +31,21 @@ function getNextImage() {
    if (counter < images.length) {
       imageElement.src = images[counter];
    }
-   addTransition();
+   addTransition()
 }
 
 function getPreviousImage() {
    counter--;
-   console.log(counter);
+
    if (counter < 0) {
       counter = images.length - 1;
    }
+
    imageElement.src = images[counter];
-   addTransition();
+   addTransition()
 }
 
 function addTransition() {
-   imageElement.classList.toggle("transition-fade");
-   imageElement.classList.toggle("transition-fade2");
+    imageElement.classList.toggle("transition-fade")
+    imageElement.classList.toggle("transition-fade2")
 }

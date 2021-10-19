@@ -1,0 +1,57 @@
+html {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+*, *::after, *::before {
+   box-sizing: inherit;
+}
+
+main {
+   width: 50vw;
+   margin: 30px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+img {
+   width: 500px;
+   height: 400px;
+   border-radius: 10px;
+}
+
+.transition-fade {
+   animation-name: t-right-fade;
+   animation-duration: 1.0s;
+   transition-timing-function: ease-in-out;
+}
+
+@keyframes t-right-fade {
+   0%{
+      opacity: 0;
+      transform: translateX(100%);
+   }
+   100%{
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.transition-fade2 {
+   animation-name: t-left-fade;
+   animation-duration:1.0s;
+   transition-timing-function: ease-in-out;
+}
+
+@keyframes t-left-fade {
+   0%{
+      opacity: 0;
+      transform: translateX(-100%);
+   }
+   100%{
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
