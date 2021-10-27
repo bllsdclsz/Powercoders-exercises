@@ -1,0 +1,22 @@
+
+ 
+ p {
+   border-left: solid 3px rgba(0,255,0,.75);
+   white-space: nowrap;
+   overflow: hidden;    
+   font-family: 'Source Code Pro', monospace;  
+   font-size: 28px;
+   position: absolute;
+   left: 10px;
+ }
+ 
+ p {
+   animation: animated-cursor 600ms steps(241,end) infinite;
+ }
+ 
+ 
+ 
+ @keyframes animated-cursor{
+   from{border-left-color: rgba(7, 7, 7, 0.75);}
+   to{border-left-color: transparent;}
+ }
