@@ -10,6 +10,8 @@ let form = document.querySelector("form");
 let counter;
 let interval;
 
+init(0)
+
 function init(pMinutes) {
    counter = Math.floor(pMinutes * 60);
    printCurrent(pMinutes);
@@ -45,7 +47,7 @@ function createResult(pSeconds) {
 function printCurrent(pMinutes) {
    let currentHour = new Date().getHours();
    let currentMinute = new Date().getMinutes();
-   currentMinute += pMinutes;
+   currentMinute += Math.floor(pMinutes);
    if (currentMinute >= 60) {
       currentHour += Math.floor(currentMinute / 60);
       currentMinute = currentMinute % 60;
@@ -69,14 +71,17 @@ fiveMin.addEventListener("click", () => {
    clearInterval(interval);
    init(5);
 });
+
 fifteenMin.addEventListener("click", () => {
    clearInterval(interval);
    init(15);
 });
+
 twentyMin.addEventListener("click", () => {
    clearInterval(interval);
    init(20);
 });
+
 oneHour.addEventListener("click", () => {
    clearInterval(interval);
    init(60);
