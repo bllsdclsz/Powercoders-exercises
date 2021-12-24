@@ -1,6 +1,6 @@
 # Guess Game
 
-1.Start
+1.Start \n
 2.Ask a number
 3.Validate the number between 1 and 100? If not go to the step 2
 4.Guess the number as middle of the range and floor the guess number?
